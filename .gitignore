@@ -1,0 +1,18 @@
+# For project files
+.project
+*.iml
+.idea/
+.settings/
+.classpath
+
+# For windows temp files
+~*
+*~
+.tern-project
+
+# For build folders and files
+dependency-reduced-pom.xml
+target/
+/build/
+/classes/
+/out/
