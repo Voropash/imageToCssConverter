@@ -28,7 +28,27 @@ public class Main {
         for (i = 0; i < img.getHeight(); i++) {
             for (j = 0; j < img.getWidth(); j++) {
                 Color color = new Color(img.getRGB(j, i));
-                html+="<i style=\"background:#" + Integer.toString(color.getRed(),16) + Integer.toString(color.getGreen(),16) + Integer.toString(color.getBlue(),16)+ "\"></i>";
+                String red = Integer.toString(color.getRed(),16);
+                String green = Integer.toString(color.getGreen(),16);
+                String blue = Integer.toString(color.getBlue(),16);
+                if (red.length()<2) {
+                    red = "0" + red;
+                }
+                if (green.length()<2) {
+                    green = "0" + green;
+                }
+                if (blue.length()<2) {
+                    blue = "0" + blue;
+                }if (red.length()<2) {
+                    red = "0" + red;
+                }
+                if (green.length()<2) {
+                    green = "0" + green;
+                }
+                if (blue.length()<2) {
+                    blue = "0" + blue;
+                }
+                html+="<i style=\"background:#" + red + green + blue + "\"></i>";
             }
         }
         html+="</div></p>";
